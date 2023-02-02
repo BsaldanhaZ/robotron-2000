@@ -1,12 +1,8 @@
-const somar = document.querySelector("#somar")
-const subtrair = document.querySelector("#subtrair")
-const braco = document.querySelector("#braco")
-
-const controle = document.querySelectorAll(".controle-ajuste")
+const controle = document.querySelectorAll("[data-controle]")
 
 controle.forEach ( (elemento) => {
     elemento.addEventListener("click", (evento) => {
-        manipulaDados(evento.target.textContent, evento.target.parentNode)
+        manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
     })
 
 })
