@@ -1,7 +1,11 @@
-const robotron = document.querySelector("#robotron")
+const somar = document.querySelector("#somar")
+const subtrair = document.querySelector("#subtrair")
+const braco = document.querySelector("#braco")
 
-robotron.addEventListener("click", seClicou)
+somar.addEventListener("click", (evento) => {
+    braco.value = parseInt(braco.value) + 1
+})
 
-function seClicou() {
-    console.log("clicou que eu vi")
-}
+subtrair.addEventListener("click", (evento) => {
+    braco.value = parseInt(braco.value) - 1
+})
